@@ -36,6 +36,10 @@
     background-color: #111;
   }
   
+  li:last-child {
+    border-right: none;
+  }
+
   /* Header/Blog Title */
   .header {
     padding: 10px;
