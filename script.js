@@ -1,31 +1,17 @@
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
-    }
-  }
+function readMore(post) {
+  let dots = document.querySelector(`.card[data-post="${post}"] .dots`);
+  let moreText = document.querySelector(`.card[data-post="${post}"] .more`); 
+  let btnText = document.querySelector(`.card[data-post="${post}"] .myBtn`);
 
-  function showMore() {
-    var dots = document.getElementById("dots2");
-    var moreText = document.getElementById("more2");
-    var btnText = document.getElementById("myBtn2");
-  
-    if (dots.style.display === "none") {
+  if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
+      btnText.textContent = "Read more";
       moreText.style.display = "none";
-    } else {
+  } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
+      btnText.textContent = "Read less"; 
       moreText.style.display = "inline";
-    }
   }
+}
+
+  
