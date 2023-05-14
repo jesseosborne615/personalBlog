@@ -13,8 +13,9 @@
 
   ul {
    
-    display: inline-block;
-    list-style-type: none;
+    width:750px;
+    margin:0 auto;
+    list-style:none;
     /* background-color: #333; */
   }
   
@@ -27,7 +28,7 @@
   li a {
     display: block;
     color: white;
-    text-align: center;
+   
     padding: 14px 16px;
     text-decoration: none;
   }
@@ -43,7 +44,9 @@
   .header {
     padding: 10px;
     font-size: 40px;
-    text-align: center;
+    
+margin:0 auto;
+list-style:none;
     
     color: #111;
     font-family: 'Bowlby One SC', cursive;
@@ -87,9 +90,7 @@
     
   }
  
-  .postHeadings {
-    text-align: center;
-  }
+
 
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn { 
